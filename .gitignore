@@ -126,6 +126,10 @@ dmypy.json
 # General
 .vagrant/
 
+### Personal Batch-files ###
+migrate.sh
+runserver.sh
+
 # Log files (if you are creating logs in debug mode, uncomment this)
 # *.logs
 

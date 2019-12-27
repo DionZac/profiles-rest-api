@@ -1,0 +1,39 @@
+################################################
+##
+## Create a development enviroment
+##
+################################################
+
+1. Install Git
+2. Install VirtualBox
+3. Install Vagrant
+
+4. Open working directory VIA git-bash (to work with some linux commands)
+5. Configure Git email/name and SSH keys
+    a) git config --global user.email "zacdion333@gmail.com"
+    b) git config --global user.name  "zacdion"
+    c) ssh-keygen -t rsa -b 4096 -C "zacdion333@gmail.com"
+    d) Use this generated SSH-key in git-hub (Settings/SSH-keys etc...)
+    e) Now you can push changes to this repository.... 
+
+6. Create the Vagrant file
+7. Run and connect to Vagrant Server
+    a) vagrant up --provider=virtualbox -- will download everything you need depending on the Vagrant-File and initialize the Vagrant Server
+    b) vagrant ssh -- Connects to the VM via SSH.
+    c) python(3) -m venv ~/env -- Create Virtual Enviroment
+    d) source ~/env/bin/activate -- Workon on this Enviroment
+    e) deactivate -- Stop working on this Enviroment
+    f) exit -- disconnect to your local machine again.
+8. Sync your local project directory with Virtual Machine local directory
+    a) cd /vagrant
+    b) Any changes will be done here will affect the local machine working directory and vise-versa.
+9. Commit & Push to Git
+    a) Open the local machine working directory in a Git-Bash.
+    b) git commit -am="Commit Message"
+    c) git push origin -- will push the changes to git-repository.
+
+
+#################################################
+##
+##
+#################################################
