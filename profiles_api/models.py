@@ -7,7 +7,7 @@ from django.contrib.auth.models import BaseUserManager
 class UserProfileManager(BaseUserManager):
     """Manager for user profiles"""
 
-    def cerate_user(self, email, name, password=None):
+    def create_user(self, email, name, password=None):
         """Create new user profile"""
         if not email:
             raise ValueError("Users must have an email address")
@@ -29,7 +29,7 @@ class UserProfileManager(BaseUserManager):
 
         ## "is_superuser" field is automatically generated in the model from the "PermissionsMixin" inheritance of the UserProfile model ##
         user.is_superuser = True
-        
+
         user.is_staff = True
         user.save(using=self._db)
 
