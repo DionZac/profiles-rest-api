@@ -139,3 +139,7 @@ runserver.sh
 # End of https://www.gitignore.io/api/python,vagrant
 eb-package.zip
 static/
+
+
+# My stuff....
+sqlite3.exe

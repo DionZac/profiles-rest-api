@@ -37,3 +37,24 @@
 ##
 ##
 #################################################
+
+
+
+################################################
+##
+## Connect to development Server
+##
+################################################
+
+1. Open up git-bash
+2. Change directory to development folder
+3. Run "vagrant up" to start the virtual machine
+4. Once the VM is running, run "vagrant ssh" to connect in VM
+5. Change directory to vagrant folder -- 'cd /vagrant'
+6. Activate the working env -- 'source ~/env/bin/activate'   ( or 'workon env' if bash exists )
+7. Run './runserver.sh' to Start the Development Server!!!
+
+#################################################
+##
+##
+#################################################
